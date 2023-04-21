@@ -20,7 +20,7 @@ int main() {
 	cout << " ||				                                          ||\n";
 	cout << " ||                                                                       ||\n";
 	cout << " ===========================================================================\n";
-	
+
 	/**
 	* Add code to this file to allow the user to play Tic-tac-toe or the Snake Game
 	* The user may play either game by pressing 1 or 2
@@ -31,10 +31,16 @@ int main() {
 
 	switch(option)
 	{
-        case 1:
+        case 1:{
+            TicTacToe_Game t;
+            t.playGame();
             break;
-        case 2:
+        }
+        case 2:{
+            SnakeGame s;
+            s.StartGame();
             break;
+        }
         default:
             cout << "Thanks for Playing!!!" <<endl;
             break;
